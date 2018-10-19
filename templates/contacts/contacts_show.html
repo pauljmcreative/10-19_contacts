@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <h3>Contacts List</h3>
+  
+  {% if contact %}
+  <ul>
+    <li>{{ contact.first_name }} {{ contact.last_name }}</li>
+  </ul>
+  {% else %}
+    <p>No contact available</p>
+  {% endif %}
+  
+
+{% endblock %}
